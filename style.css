@@ -3,10 +3,61 @@
   padding: 0;
 }
 #banner {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), #009688);
-  background-image: url(images/cover.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), #009688),
+    url(images/cover.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
-  width: 100vh;
+}
+.logo {
+  width: 140px;
+  position: absolute;
+  top: 4px;
+  left: 10px;
+}
+.banner-text {
+  text-align: center;
+  color: white;
+  padding-top: 180px;
+  font-family: "Roboto", sans-serif;
+}
+.banner-text h1 {
+  font-size: 130px;
+  font-family: "Kanit", sans-serif;
+}
+.banner-text p {
+  font-size: 20px;
+  font-style: italic;
+  font-family: "Roboto Mono", monospace;
+}
+.banner-btn {
+  margin: 70px auto 0;
+}
+.banner-btn a {
+  width: 150px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 10px;
+  padding: 12px 0;
+  color: #fff;
+  border: 0.5px solid #fff;
+  position: relative;
+  z-index: 1;
+  transition: 0.5s #fff;
+}
+.banner-btn a span {
+  height: 100%;
+  width: 0;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: 0.4s;
+}
+.banner-btn a:hover span {
+  width: 100%;
+}
+.banner-btn a:hover {
+  color: #000;
 }
