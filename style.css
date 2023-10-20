@@ -65,7 +65,7 @@
 #sideNav {
   width: 250px;
   height: 100vh;
-  position: fixed;
+  position: absolute;
   right: -250px;
   top: 0;
   background: #009688;
@@ -85,7 +85,7 @@ nav ul li a {
   height: 50px;
   background: #009688;
   text-align: center;
-  position: fixed;
+  position: absolute;
   right: 30px;
   top: 20px;
   border-radius: 3px;
